@@ -4,7 +4,7 @@ var fs = require('fs')
 
 exports = module.exports = core = {};
 
-core.version = (JSON.parse(fs.readFileSync('./package.json')).version);
+core.version = (JSON.parse(fs.readFileSync(__dirname + '/package.json')).version);
 
 core.create_dir = function() {
   if (!path.existsSync(kpath)) {
