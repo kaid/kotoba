@@ -1,0 +1,27 @@
+{
+    "author": "Kaid Wong <kaid@kaid.me> (http://kaid.me)"
+  , "name": "kotoba"
+  , "description": "A foreign language learning tool, to easily keep record of new words you come across."
+  , "keywords": ["cli", "learning", "language"]
+  , "version": "0.0.1"
+  , "homepage": "http://github.com/kaid/kotoba"
+  , "repository": {
+      "type": "git"
+    , "url": "git://github.com/kaid/kotoba.git"
+  }
+  , "main": "index"
+  , "bin": { "kotabo": "./bin/kotoba" }
+  , "scripts": {
+      "test": "make test"
+  }
+  , "engines": {
+      "node": "0.6.x"
+  }
+  , "dependencies": {
+      "commander": "0.5.x"
+  }
+  , "devDependencies": {
+      "mocha": "0.11.x"
+    , "chai": "0.2.x"
+  }
+}

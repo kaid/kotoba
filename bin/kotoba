@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+/**
+ * Dependencies
+ */
+
+var program = require('commander')
+  , kotoba = require('../index')
+
+program
+  .version(kotoba.version)
+  .usage('<word/phrase>')
+  .parse(process.argv);
+
+var add_record = function(argv) {
+  var buffer = argv.slice(2);
+  var input = buffer.join(' ');
+  kotoba.create_dir();
+  kotoba.write_file(input);
+  console.log('recorded: ' + input);
+  kotoba.count_records();
+}
+
+if (process.argv.length === 2) {
+  kotoba.count_records(function(){
+    console.log('try \'kotoba --help\' for more information');
+  });
+} else {
+  add_record(process.argv);
+}

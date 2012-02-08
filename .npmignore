@@ -1,0 +1,8 @@
+.git*
+node_modules/
+.kotoba/
+test.js
+.DS_Store
+*~
+#*#
+*.swp
