@@ -3,7 +3,7 @@
   , "name": "kotoba"
   , "description": "A foreign language learning tool, to easily keep record of new words you come across."
   , "keywords": ["cli", "learning", "language"]
-  , "version": "0.0.1"
+  , "version": "0.0.2"
   , "homepage": "http://github.com/kaid/kotoba"
   , "repository": {
       "type": "git"

@@ -4,7 +4,7 @@ var fs = require('fs')
 
 exports = module.exports = core = {};
 
-core.version = '0.0.1';
+core.version = (JSON.parse(fs.readFileSync('./package.json')).version);
 
 core.create_dir = function() {
   if (!path.existsSync(kpath)) {
@@ -36,8 +36,8 @@ core.file_name = function() {
 
 core.count_records = function(callback) {
   fs.readdir(kpath, function(err, files) {
-    var today, total;
-    total = files.filter(function(f) {
+    var today = 0, total = 0;
+    if (files) total = files.filter(function(f) {
       return f.substring(f.length - 7, f.length) === '.kotoba';
     }).map(function(f) {
       var t = f;
