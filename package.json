@@ -10,7 +10,7 @@
     , "url": "git://github.com/kaid/kotoba.git"
   }
   , "main": "index"
-  , "bin": { "kotabo": "./bin/kotoba" }
+  , "bin": { "kotoba": "./bin/kotoba" }
   , "scripts": {
       "test": "make test"
   }
