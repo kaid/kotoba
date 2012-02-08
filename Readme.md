@@ -1,7 +1,5 @@
 # Kotoba
 
-## Overview
-
 **Kotoba** is a small cli program that helps to keep record of new words/phrases you come across.
 
 ## Installation
