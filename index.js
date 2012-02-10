@@ -1,6 +1,7 @@
 var fs = require('fs')
   , path = require('path')
-  , kpath = process.env.HOME + '/.kotoba/';
+  , HOME = process.platform === 'win32' ? process.env.USERPROFILE : process.env.HOME
+  , kpath = HOME + '/.kotoba/';
 
 exports = module.exports = core = {};
 
